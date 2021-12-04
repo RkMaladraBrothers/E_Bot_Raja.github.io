@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<title>Code Bomb</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://raw.githubusercontent.com/RkMaladraBrothers/E_Bot_Raja.github.io/main/Screenshot_20211204-102416.jpeg' rel='image_src' />
+ <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/RkMaladraBrothers/E_Bot_Raja.github.io/main/Screenshot_20211204-102416.jpeg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%;
+}
+
+*{ -webkit-user-select: none;
+   -webkit-touch-callout: none;   
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+body{
+				width: 100%;
+ background: black url(file:///storage/emulated/0/Download/Webp.net-resizeimage.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container{
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.card{
+    height: 60vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: absolute;
+    border-radius: 8px;
+    -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+            box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    font-family: 'Poppins',sans-serif;
+}
+.card-img{
+    height: 110px;
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    margin: 4vh auto 20px auto;
+    left: 0;
+    right: 0;
+
+}
+.card-img img{
+    height: 86%;
+    border-radius: 50%;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+h6{
+    margin: 0;
+}
+.desc{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
+.primary-text{
+    color: #d5d5d5;
+    font-size: 2.7vh;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin: 5px 0;
+}
+.secondary-text{
+    color: #c0c0c0;
+    font-weight: 400;
+    font-size: 2.4vh;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+button{
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border: none;
+
+}
+.details{
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 10vh;
+    padding: 1vh 0;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+.details>div{
+    text-align: center;
+}
+.details>div:first-child{
+    border-right: 2px solid rgba(255,255,255,0.08);
+}
+
+button{
+    width: 55vw;
+    padding: 2vh 0;
+    position: absolute;
+    left: 10%;
+    top: 35vh;
+    border-radius: 5px;
+    outline: none;
+}
+
+#H{
+		Visibility: hidden;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+
+
+
+h1 {
+  color: #111;
+  font-family: 'Nosifer', cursive;
+  letter-spacing: 2px;
+  font-size: 7vw;
+  text-shadow: 0 0 10px #CF000F;
+  position: fixed;
+  top: 2%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.blood {
+  display: block;
+  width: 13px;
+  position: absolute;
+}
+
+.blood-1 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 2s;
+  -moz-transition: opacity 0.5s, transform 2s;
+  -ms-transition: opacity 0.5s, transform 2s;
+  -o-transition: opacity 0.5s, transform 2s;
+  transition: opacity 0.5s, transform 2s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-1--drop {
+  opacity: 1;
+  -webkit-transform: translateY(70px); 
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.blood-1--hide {
+  opacity: 0;
+}
+
+.blood-2 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 3s;
+  -moz-transition: opacity 0.5s, transform 3s;
+  -ms-transition: opacity 0.5s, transform 3s;
+  -o-transition: opacity 0.5s, transform 3s;
+  transition: opacity 0.5s, transform 3s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-2--drop {
+  opacity: 1;
+  -webkit-transform: translateY(90px); 
+  -moz-transform: translateY(90px);
+  -ms-transform: translateY(90px);
+  -o-transform: translateY(90px);
+  transform: translateY(90px);
+}
+
+.blood-2--hide {
+  opacity: 0;
+}
+
+.blood-3 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 1.3s;
+  -moz-transition: opacity 0.5s, transform 1.3s;
+  -ms-transition: opacity 0.5s, transform 1.3s;
+  -o-transition: opacity 0.5s, transform 1.3s;
+  transition: opacity 0.5s, transform 1.3s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-3--drop {
+  opacity: 1;
+  -webkit-transform: translateY(50px); 
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.blood-3--hide {
+  opacity: 0;
+}
+
+.blood-4 {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, transform 1s;
+  -moz-transition: opacity 0.4s, transform 1s;
+  -ms-transition: opacity 0.4s, transform 1s;
+  -o-transition: opacity 0.4s, transform 1s;
+  transition: opacity 0.4s, transform 1s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-4--drop {
+  opacity: 1;
+  -webkit-transform: translateY(60px); 
+  -moz-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -o-transform: translateY(60px);
+  transform: translateY(60px);
+}
+
+.blood-4--hide {
+  opacity: 0;
+}
+
+.blood-5 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 2.5s;
+  -moz-transition: opacity 0.5s, transform 2.5s;
+  -ms-transition: opacity 0.5s, transform 2.5s;
+  -o-transition: opacity 0.5s, transform 2.5s;
+  transition: opacity 0.5s, transform 2.5s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-5--drop {
+  opacity: 1;
+  -webkit-transform: translateY(70px); 
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.blood-5--hide {
+  opacity: 0;
+}
+
+.blood-6 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 3s;
+  -moz-transition: opacity 0.5s, transform 3s;
+  -ms-transition: opacity 0.5s, transform 3s;
+  -o-transition: opacity 0.5s, transform 3s;
+  transition: opacity 0.5s, transform 3s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-6--drop {
+  opacity: 1;
+  -webkit-transform: translateY(100px); 
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+}
+
+.blood-6--hide {
+  opacity: 0;
+}
+
+.blood-7 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 1.4s;
+  -moz-transition: opacity 0.5s, transform 1.4s;
+  -ms-transition: opacity 0.5s, transform 1.4s;
+  -o-transition: opacity 0.5s, transform 1.4s;
+  transition: opacity 0.5s, transform 1.4s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-7--drop {
+  opacity: 1;
+  -webkit-transform: translateY(50px); 
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.blood-7--hide {
+  opacity: 0;
+}
+
+.blood-8 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 2s;
+  -moz-transition: opacity 0.5s, transform 2s;
+  -ms-transition: opacity 0.5s, transform 2s;
+  -o-transition: opacity 0.5s, transform 2s;
+  transition: opacity 0.5s, transform 2s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-8--drop {
+  opacity: 1;
+  -webkit-transform: translateY(70px); 
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.blood-8--hide {
+  opacity: 0;
+}
+
+.blood-9 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 2.5s;
+  -moz-transition: opacity 0.5s, transform 2.5s;
+  -ms-transition: opacity 0.5s, transform 2.5s;
+  -o-transition: opacity 0.5s, transform 2.5s;
+  transition: opacity 0.5s, transform 2.5s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-9--drop {
+  opacity: 1;
+  -webkit-transform: translateY(140px); 
+  -moz-transform: translateY(140px);
+  -ms-transform: translateY(140px);
+  -o-transform: translateY(140px);
+  transform: translateY(140px);
+}
+
+.blood-9--hide {
+  opacity: 0;
+}
+
+.blood-10 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 1.9s;
+  -moz-transition: opacity 0.5s, transform 1.9s;
+  -ms-transition: opacity 0.5s, transform 1.9s;
+  -o-transition: opacity 0.5s, transform 1.9s;
+  transition: opacity 0.5s, transform 1.9s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-10--drop {
+  opacity: 1;
+  -webkit-transform: translateY(65px); 
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  transform: translateY(65px);
+}
+
+.blood-10--hide {
+  opacity: 0;
+}
+
+.blood-11 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, transform 3.2s;
+  -moz-transition: opacity 0.5s, transform 3.2s;
+  -ms-transition: opacity 0.5s, transform 3.2s;
+  -o-transition: opacity 0.5s, transform 3.2s;
+  transition: opacity 0.5s, transform 3.2s;
+  -webkit-transform: translateY(0); 
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.blood-11--drop {
+  opacity: 1;
+  -webkit-transform: translateY(83px); 
+  -moz-transform: translateY(83px);
+  -ms-transform: translateY(83px);
+  -o-transform: translateY(83px);
+  transform: translateY(83px);
+}
+
+.blood-11--hide {
+  opacity: 0;
+}
+
+
+
+#cont{
+    display: flex;
+    flex-flow:column;
+    visibility: hidden;
+}
+
+#timer{
+    font-family:cursive;
+    text-align:center;
+    position: fixed;
+top: 40vh;
+left: 0;
+width: 100%;
+    font-size: 4.5vw;
+    color:white;
+    text-shadow:0 0 9px red,
+                0 0 18px #DC143C,
+                0 0 30px #8B0000;
+    font-weight: 900;
+    z-index: 1;
+}
+
+
+#B::before{
+				   content: "Raja' ";
+				   color: #111;
+  font-family: 'Nosifer', cursive;
+  letter-spacing: 2px;
+  font-size: 4vw;
+  text-shadow: 0 0 10px #CF000F;
+  width: 100%;
+}
+
+
+
+.Re{
+  position: fixed;
+  top: 14%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+	font-size: 10vw;
+	font-family: 'Mrs Sheppards', cursive;
+	font-weight: 500;
+	color: #fff;
+    /*text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;*/
+			text-shadow :
+0px -1px 4px white,
+0px -2px 10px yellow,
+0px -10px 20px #ff8000,
+0px -18px 40px red,
+
+0px 1px 4px white,
+0px 2px 10px yellow,
+0px 10px 20px #ff8000,
+0px 18px 40px red,
+
+1px 0px 4px white,
+2px 0px 10px yellow,
+10px 0px 20px #ff8000,
+18px 0px 40px red,
+
+-1px 0px 4px white,
+-2px 0px 10px yellow,
+-10px 0px 20px #ff8000,
+-18px 0px 40px red ;
+z-index: 1;
+}
+
+.Ra{
+position: fixed;
+text-align: center;
+top: 25%;
+left:0;
+width: 100%;
+font-size: 8vw;
+font-weight: 900;
+			background: url('https://tympanus.net/codrops-playground/assets/images/posts/23145/fire.gif');
+			background-position: left;
+			-webkit-background-clip:text;
+			color: transparent;
+  z-index: 1;
+}
+
+
+
+.W{
+		Width: 14vw;
+		height: auto;
+		position: absolute;
+    top: 10px;
+    left: 45px;
+}
+
+.Te{
+	  Width: 13vw;
+		height: auto;
+		position: absolute;
+    top: 10px;
+    
+    margin-left: -30px;
+}
+
+#N{
+		text-shadow: 0 -0.87px White;
+		color:white;
+}
+
+#GT{
+			animation: flicker 3s infinite alternate;
+  color: #fff;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #fff,
+      0 0 80px #fff;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+                  /* Date Of Death */
+
+.Death{
+		color: White;
+		text-shadow:0 0 2.5vw white;
+    animation:text 15s infinite ;
+    text-align: center;
+    display: block;
+    position: fixed;
+    top: -2vw;
+    left: 10vw;
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+@keyframes text{
+    0%{text-shadow:0 0 2vw Fuchsia;}
+    25%{text-shadow:0 0 2vw cyan;}
+    30%{text-shadow:0 0 2.5vw cyan;}
+    35%{text-shadow:0 0 3vw cyan;}
+    40%{text-shadow:0 0 2.5vw cyan;}
+    45%{text-shadow:0 0 2.5vw red;}
+    50%{text-shadow:0 0 3vw red;}
+    55%{text-shadow:0 0 2.5vw red;}
+    60%{text-shadow:0 0 2vw red;}
+    70%{text-shadow:0 0 2vw lime;}
+    75%{text-shadow:0 0 2.5vw lime;}
+    80%{text-shadow:0 0 3vw lime;}
+    85%{text-shadow:0 0 3vw lime;}
+    90%{text-shadow:0 0 3 Fuchsia;}
+    95%{text-shadow:0 0 2.5vw Fuchsia;}
+    100%{text-shadow:0 0 2vw Fuchsia;}
+}
+
+.rose{
+			 		text-shadow:0 0 2vw red;
+    animation:rose 10s infinite ;
+}
+
+@keyframes rose{
+    0%{text-shadow:0 0 1vw red;}
+    25%{text-shadow:0 0 2vw red;}
+    50%{text-shadow:0 0 3vw red;}
+    75%{text-shadow:0 0 4vw red;}
+    100%{text-shadow:0 0 6vw red;}
+}
+
+.Deepak1{
+				Width: 14vw;
+				height: auto;
+				top: 33vw;
+				left: 9vw;
+				position: fixed;
+}
+
+.Deepak2{
+				Width: 14vw;
+				height: auto;
+				top: 33vw;
+				left: 76vw;
+				position: fixed;
+}
+
+.Raja	{
+				Width: 55vw;
+				height: auto;
+				position: fixed;
+				top: 13vw;
+				left: 21vw;
+}
+
+.R{
+		Color: white;
+		float: center;
+		position: fixed;
+   top: 56vw;
+   left: 29vw;
+   text-shadow:0 0 1.3vw white;
+   font-size: 4vw;
+}
+
+.Birth{
+       font-size: 3.7vw;;
+				Color: White;
+				text-shadow:0 0 1.1vw yellow;
+				position: fixed;
+				top: 65vw;
+}
+
+.all{
+      font-size: 3.7vw;
+			Color: White;
+			font-weight: bolder;
+			text-shadow:0 0 1.1vw red;
+			position: fixed;
+			top: 76vw;
+}
+
+.hmsf{
+      top: 81vw;
+      left: 35vw;
+			position: fixed;
+}
+
+.Sad{
+			color: red;
+			font-weight: bolder;
+			font-size: 8vw;
+			text-shadow:0 0 1vw pink;
+			text-shadow:0.1vw 0.33vw gold;
+			position: fixed;
+			top: 88vw;
+}
+
+.King{
+			color: red;
+			text-indent: 21vw;
+			font-weight: bolder;
+			font-size: 4.1vw;
+			position: fixed;
+			top: 100vw;
+}
+
+</style>
+
+</head>
+<body>
+
+<audio id="audio" controls loop style="display:none" src="file:///storage/emulated/0/Download/y2mate.com%20-%20Padmavati%20climax%20jauhar%20bgm%20WhatsApp%20status%2030%20seconds.mp3"></audio>
+
+				 <div id="Page1">
+ <div class="container">
+    <div class="card">
+        <div class="card-img">
+            <img src="file:///storage/emulated/0/Whatsapp/Media/WhatsApp%20Profile%20Photos/+91%2095105%2091045%2020210522_210827.jpg" loading="lazy"/>
+        </div>
+        <div class="desc">
+          <h6 class="primary-text" id="N">E_Bot_Raja</h6>
+            <h6 class="secondary-text">Code & Rules Editor</h6>
+        </div>
+        <button class="primary-text" id="GT" onclick="play(); return show('Page2','Page1'); myFunction();">Click Here</button>
+        <div class="details">
+            <div class="rating">
+<h6 class="primary-text"><img class="W" onclick="window.location.href = 'https://wa.me/+919510591045';" src="Images/whatsapp-logo-app-png-4.png"/></h6>
+            </div>
+            <div class="activity">
+                <h6 class="primary-text"><img class="Te" onclick="window.location.href = 'https://t.me/E_Bot_Raja';" src="Images/telegram-logo-png-0.png"/></h6>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="Page2" style="display:none">
+ 
+ 	<div style="position: absolute; visibility: hidden; z-index: 1;" id="Death">
+   <p class="Death"><span class="rose">&#127801;</span>&nbsp; Date Of &nbsp;Death &nbsp;<span class="rose">&#127801;</span></p>
+
+<img Class="Deepak1" src="Images/PngItem_3742858.png">
+<img class="Raja" src="Images/1621768425285.png">
+<h2 class="R">નામ:- રાજા સિસોદિયા</h2>
+<img Class="Deepak2" src="Images/PngItem_3742858.png">
+
+<h4 class="Birth"> Date Of Birth:- 5 /12 /2001</h4>
+<span class="all">
+<span>Date Of Death:-&nbsp;&nbsp;</span><span id="day"></span><br /><span class="hmsf"><span id="hour"></span><span id="min"></span>
+<span id="sec"></span>
+<span id="format"><small>Loading...</small></span></span>
+</span>
+<br /> <br />
+<span class="Sad"> Sad to say that</span> <br />
+<div class="King">King is still Alive, but when this time stops then understand king is dead.</div></div>
+			<div id="bg">
+  <img  id="gif" src="file:///storage/emulated/0/HTML%20Codes/Images/Head.gif"/>
+  <img style="visibility: hidden" id="black" src="file:///storage/emulated/0/HTML%20Codes/Images/Black%20Background.jpg"/>
+</div>
+</div>
+
+
+<div id="H">
+				<h1><span class="h-one">D</span><span class="h-two">a</span><span class="h-three">t</span><span class="h-four">e</span>&nbsp;<span class="h-five">o</span><span class="h-six">f</span>&nbsp;<span class="h-second-one">D</span><span class="h-second-two">e</span><span class="h-second-three">a</span><span class="h-second-four">t</span><span class="h-second-fifth">h</span></h1>
+
+		<img class="blood blood-1" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-2" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-3" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-4" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-5" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+		<img class="blood blood-6" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-7" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+		
+		<img class="blood blood-8" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-9" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-10" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+
+		<img class="blood blood-11" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzNS41NzggNTM1LjU3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjU3OCA1MzUuNTc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDEwMCwwLDApO3N0b3Atb3BhY2l0eTowLjciIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjU1LDAsMCk7c3RvcC1vcGFjaXR5OjAuNyIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Zz48Zz48cGF0aCBkPSJNNDI1Ljc5MiwzNzYuMDQ1YzAtMzMuMDAzLTEwLjkzLTEwMi43OS01Ni4zNTEtMTY4LjM3MUMzMzAuMjIzLDE1MS4wNSwyNjYuMjU5LDAsMjY2LjI1OSwwICAgIHMtNjAuOTA0LDE1MS4wNS0xMDAuMTIyLDIwNy42NzNjLTQ1LjQyMSw2NS41ODEtNTYuMzUxLDEzNS4zNjgtNTYuMzUxLDE2OC4zNzJjMCw4Ny4wODYsNjkuNzc4LDE1Ny44NjMsMTU2LjQ3MywxNTkuNDk1djAuMDM4ICAgIGMwLjUxMSwwLDEuMDItMC4wMTUsMS41My0wLjAxOWMwLjUxMSwwLjAwNSwxLjAyLDAuMDE5LDEuNTMxLDAuMDE5di0wLjAzOEMzNTYuMDE0LDUzMy45MDgsNDI1Ljc5Miw0NjMuMTMxLDQyNS43OTIsMzc2LjA0NXoiIGZpbGw9InVybCgjZ3JhZDEpIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=" />
+ </div>
+
+<div id="cont"><span class="Re">Release On</span><span class="Ra">05/12/2001</span><div id="timer"></div></div>
+
+     <script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+    </script>
+
+				<script type='text/javascript' src='jquery.min.js'></script>
+<script type="text/javascript">		
+				$(document).ready(function() {
+  var text = $('h1');
+	var lineOne = [$('.h-one'), $('.h-two'), $('.h-three'), $('.h-four')];
+	var lineTwo = [$('.h-second-one'), $('.h-second-two'), $('.h-second-three'), $('.h-second-four'), $('.h-second-fifth')];
+	var lineThree = [$('.h-five'), $('.h-six')];
+	var blood = [$('.blood-1'), $('.blood-2'), $('.blood-3'), $('.blood-4'), $('.blood-5'), $('.blood-6'), $('.blood-7'), $('.blood-8'), $('.blood-9'), $('.blood-10'), $('.blood-11')];
+
+  function bloodAnimation (id, time, delay) {
+		blood[id].toggleClass('blood-'+(id+1)+'--drop');
+		setTimeout(function(){
+			blood[id].toggleClass('blood-'+(id+1)+'--hide');
+			setTimeout(function(){
+				blood[id].removeClass('blood-'+(id+1)+'--drop');
+				blood[id].removeClass('blood-'+(id+1)+'--hide');
+			}, delay);
+		}, time);
+		
+		setInterval(function(){
+			blood[id].toggleClass('blood-'+(id+1)+'--drop');
+			setTimeout(function(){
+				blood[id].toggleClass('blood-'+(id+1)+'--hide');
+				setTimeout(function(){
+					blood[id].removeClass('blood-'+(id+1)+'--drop');
+					blood[id].removeClass('blood-'+(id+1)+'--hide');
+				}, delay);
+			}, time);
+		}, 6000);
+	}
+
+	function getBlood() {
+		blood[0].css('left', lineOne[0].offset().left);
+		blood[0].css('top', lineOne[0].offset().top+lineOne[0].height()*0.5);
+		bloodAnimation(0, 1900, 500);
+		
+		blood[1].css('left', lineOne[1].offset().left);
+		blood[1].css('top', lineOne[1].offset().top+lineOne[1].height()*0.5);
+		setTimeout(function() {
+			bloodAnimation(1, 2800, 500);
+		}, 1700);
+		
+		blood[2].css('left', lineOne[2].offset().left);
+		blood[2].css('top', lineOne[2].offset().top+lineOne[2].height()*0.5);
+		setTimeout(function() {
+			bloodAnimation(2, 600, 500);
+		}, 4000);
+		
+		blood[3].css('left', lineOne[3].offset().left);
+		blood[3].css('top', lineOne[3].offset().top+lineOne[3].height()*0.5);
+		setTimeout(function() {
+			bloodAnimation(3, 700, 500);
+		}, 2700);
+		
+		blood[4].css('left', lineTwo[0].offset().left);
+		blood[4].css('top', lineTwo[0].offset().top+lineTwo[0].height()*0.5);
+		setTimeout(function(){
+			bloodAnimation(4, 1700, 500);
+		}, 3800);
+
+		blood[5].css('left', lineTwo[1].offset().left);
+		blood[5].css('top', lineTwo[1].offset().top+lineTwo[1].height()*0.6);
+		setTimeout(function(){
+			bloodAnimation(5, 1700, 500);
+		}, 800);
+
+		blood[6].css('left', lineTwo[2].offset().left*11/10);
+		blood[6].css('top', lineTwo[2].offset().top+lineTwo[2].height()*0.6);
+		setTimeout(function(){
+			bloodAnimation(6, 1100, 500);
+		}, 2300);
+
+		blood[7].css('left', lineTwo[3].offset().left);
+		blood[7].css('top', lineTwo[3].offset().top+lineTwo[3].height()*0.6);
+		setTimeout(function(){
+			bloodAnimation(7, 1800, 500);
+		}, 3500);
+
+		blood[8].css('left', lineTwo[4].offset().left);
+		blood[8].css('top', lineTwo[4].offset().top+lineTwo[4].height()*0.6);
+		setTimeout(function(){
+			bloodAnimation(8, 1000, 500);
+		}, 3000);
+		
+		blood[9].css('left', lineThree[0].offset().left);
+		blood[9].css('top', lineTwo[1].offset().top+lineTwo[0].height()*0.6);
+			bloodAnimation(9, 1900, 500);
+
+    blood[10].css('left', lineThree[1].offset().left);
+		blood[10].css('top', lineTwo[1].offset().top+lineThree[1].height()*0.6);
+		setTimeout(function(){
+			bloodAnimation(10, 1600, 500);
+		}, 1800);
+	}
+
+	getBlood();
+});
+    </script>
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      document.getElementById('H').style.visibility = 'visible';
+      document.getElementById('cont').style.visibility = 'visible';
+        }
+    </script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("H");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+   <script>
+   				var x= setInterval(function(){
+    var today= new Date()
+    var bday= new Date("Dec 05, "+today.getFullYear())
+    var date_today= new Date().setHours(0,0,0,0)
+    if(date_today==bday.getTime()){
+        clearInterval(x)
+        document.getElementById("timer").innerHTML =`<p>hi</p>`
+        document.getElementById('H').style.display = 'none';
+      document.getElementById('cont').style.display = 'none';
+      document.getElementById('Death').style.visibility = 'visible';
+      document.getElementById('gif').style.visibility = 'hidden';
+      document.getElementById('black').style.visibility = 'visible';
+   }
+    else{
+        if(today>bday){
+            bday= new Date("Dec 05, "+(today.getFullYear()+1))
+        }
+        today= today.getTime()
+        bday= bday.getTime()
+        var between= bday-today
+        var days = Math.floor(between / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((between % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((between % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((between % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML=`${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds<br />left for <span id="B"><span style=" font-size: 6vw;">s</span> Birthday</span>`
+    }
+},1000)
+</script>
+
+<script>
+				
+//For the clock (obviously)-getting the datetime values and displaying them. 
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var date = d.getDate();
+    var day = d.getDay();
+    var format = "A.M.";
+    
+    //to change the format (AM or PM) to P.M. once it's past noon. 
+    format = (hours > 11)? "P.M." : format; 
+    
+    //Converting 24-hour-format to 12-hour-format. Also to Change AM to PM, and vice-versa.
+    if (hours > 12)  {
+       hours = hours - 12 ;
+    }
+    
+    if (hours <= 9) {
+            hours = 0+""+hours ;
+            }
+            
+    //Formatting the output to look more digital (with an added zero [i.e. 04]), when the output is less than 2 digits (less than 10)
+    mins = (mins <= 9)? 0+""+mins : mins;
+    secs = (secs <= 9)? 0+""+secs : secs;
+    date = (date <= 9)? 0+""+date : date;        
+    
+    //Current day (converted from text representation [i.e. 7] to actual weekday [i.e. Saturday])
+    week = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
+    day = week[day];
+    
+    //Current Month (converted from text representation [i.e. 12] to actual month [i.e. December])
+    months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    month = months[month];
+    
+    //Displaying it all:  
+ document.getElementById("hour").innerHTML = hours+" : " ;
+   document.getElementById("min").innerHTML = mins+" : " ;
+    document.getElementById("sec").innerHTML = secs+"  " ;
+    document.getElementById("format").innerHTML = format;
+          document.getElementById("day").innerHTML = date+" /"+month+" <b>/</b>"+year+" _ "+day+".";
+}
+//Calling the printTime() function every second, to update the time. 
+setInterval(printTime, 1000);
+
+//Mission Accomplished! 
+//Created a calendar & digital clock...    easy-peasy (NOT!)
+</script>
+
+</body>
+</html>
